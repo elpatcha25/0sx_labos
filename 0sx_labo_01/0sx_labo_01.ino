@@ -42,7 +42,7 @@ void variation(){
 
 
   Serial.println("Etat:Varie - 2407822");
-    for (int i = 0; i <= 255; i++) {          
+  for (int i = 0; i <= 255; i++) {          
       analogWrite(led, i);
       delay(delayPerPeriode);                 
     }
