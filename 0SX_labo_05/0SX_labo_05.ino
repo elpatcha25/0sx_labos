@@ -8,9 +8,9 @@ const int BROCHE_JOYSTICK_X  = A1;
 const int BROCHE_BOUTON_URG  = 3;
 const int BROCHE_MOTEUR_IN1  = 44;
 const int BROCHE_MOTEUR_IN2  = 45;
-const int BROCHE_MOTEUR_EN   = 6;
+const int BROCHE_MOTEUR_EN   =4 ;
 const int BROCHE_LED_ACTIVE  = 7;
-const int BROCHE_LED_URGENCE = 8;
+const int BROCHE_LED_URGENCE = 6;
 
 const int CENTRE_JOYSTICK     = 512;
 const int ZONE_MORTE_JOYSTICK = 150;
@@ -159,7 +159,7 @@ void afficherEcran(unsigned long maintenant) {
 }
 
 void afficherPageCourante() {
-  // Page 0 : convoyeur actif + sens
+  
   if (pageLCD == 0) {
     ecran.setCursor(0, 0);
     ecran.print("Actif: ");
